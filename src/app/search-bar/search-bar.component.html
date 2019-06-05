@@ -1,0 +1,86 @@
+<div id="container"
+    class="basic-container">
+    <br />
+    <mat-form-field class="example-chip-list">
+        <mat-chip-list #chipList
+            aria-label="Fruit selection"
+            [multiple]="multiple"
+            [selectable]="selectable">
+            <mat-chip [ngClass]="'chip'"
+                class="__{{chip?.type || 'default'}}"
+                *ngFor="let chip of chips"
+                [removable]="removable"
+                (removed)="remove(chip)">
+                <img *ngIf="chip?.value?.image"
+                    [src]="chip?.value?.image"
+                    class="option-image" />
+                {{chip?.value?.title}}
+                <mat-icon matChipRemove
+                    *ngIf="removable"
+                    [ngClass]="'show-on-hover remove-chip'">cancel</mat-icon>
+            </mat-chip>
+            <input [placeholder]="placeholder"
+                #searchInput
+                [formControl]="searchCtrl"
+                [matAutocomplete]="auto"
+                [matAutocompletePosition]="'below'"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                [matChipInputAddOnBlur]="addOnBlur"
+                (keydown)="onType($event)"
+                (paste)="onType($event)"
+                (matChipInputTokenEnd)="add($event)">
+        </mat-chip-list>
+        <mat-autocomplete #auto="matAutocomplete"
+            (optionSelected)="selected($event)">
+            <ng-container *ngIf="showGroups">
+                <mat-optgroup *ngFor="let group of stateGroupOptionsStatic"
+                    [label]="group?.groupTitle">
+                    <mat-option *ngFor="let item of group.groupItems"
+                        [value]="item">
+                        <img class="option-image"
+                            *ngIf="item?.image"
+                            [src]="item?.image" /> {{item?.title}}<ng-container *ngIf="showTypeInfo"><span
+                                class="type-info"> - {{item.groupType | titlecase}}</span></ng-container>
+                    </mat-option>
+                </mat-optgroup>
+            </ng-container>
+
+            <ng-container *ngIf="!showGroups">
+                <mat-option *ngFor="let item of stateGroupOptionsStatic | optGroupToOpt"
+                    [value]="item">
+                    <img class="option-image"
+                        *ngIf="item?.image"
+                        [src]="item?.image" /> {{item?.title}}<ng-container *ngIf="showTypeInfo"><span
+                            class="type-info"> - {{item.groupType | titlecase}}</span></ng-container>
+                </mat-option>
+            </ng-container>
+
+            <ng-container *ngIf="showNoData">
+                <mat-option [value]="''"
+                    [disabled]="true">
+                    {{noDataText}}
+                </mat-option>
+            </ng-container>
+        </mat-autocomplete>
+    </mat-form-field>
+</div>
+
+<ng-container *ngIf="showDebug">
+    <div>
+        Is Updating: {{isUpdating}}
+        showNoData: {{showNoData}}
+    </div>
+    <div>
+        Chips
+        <pre>{{chips | json}}</pre>
+    </div>
+    <div>
+        stateGroupOptionsStatic
+        <pre>{{stateGroupOptionsStatic | json}}</pre>
+    </div>
+    <div>
+        searchTermsStatic:
+        <pre>{{searchTermsStatic | json}}</pre>
+    </div>
+</ng-container>

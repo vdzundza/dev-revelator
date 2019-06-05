@@ -1,0 +1,25 @@
+<p>
+  assets-search-bar works!
+</p>
+
+<rev-search-bar
+        #searchBar
+        [placeholder]="placeholder"
+        [selectable]="selectable"
+        [removable]="removable"
+        [addOnBlur]="addOnBlur"
+        [showSearchTerms]="showSearchTerms"
+        [allowDuplicates]="allowDuplicates"
+        [debounceTime]="debounceTime"
+        [freeTextSearchType]="freeTextSearchType"
+        [showDebug]="showDebug"
+        [noDataText]="noDataText"
+        [showGroups]="showGroups"
+        [showTypeInfo]="showTypeInfo"
+        [searchTerms]="searchQueries"
+        [searchTermsHelp]="searchTermsHelp"
+        (updateSearchToken)="updateSearchToken($event)"
+        (updateChips)="updateChips($event)"
+        (clearChips)="clearChips($event)"
+>
+</rev-search-bar>

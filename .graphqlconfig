@@ -1,0 +1,16 @@
+{
+  "name": "Remote Schema",
+  "schemaPath": "remote-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Remote GraphQL Endpoint": {
+        "url": "https://dev2-gw.revelator.tech/api/webapi/graphqlv2/",
+        "headers": {
+          "user-agent": "JS GraphQL",
+          "Authorization": "Bearer ${env:TOKEN}"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

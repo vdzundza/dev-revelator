@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Products/Assets/release</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,12 C2,17.5227153 6.47728475,22 12,22 C14.8842827,22 17.5679244,20.7739573 19.4541647,18.6657517 C20.1220121,17.9202475 20.6753731,17.0775985 21.0940895,16.1660088 C21.6883179,14.8707765 22,13.458539 22,12 C22,6.47728475 17.5227153,2 12,2 C6.47728475,2 2,6.47728475 2,12 Z M0,12 C0,5.37271525 5.37271525,0 12,0 C18.6272847,0 24,5.37271525 24,12 C24,13.7478872 23.6255701,15.4444364 22.9117231,17.0003996 C22.4090561,18.0947588 21.7451172,19.1057942 20.94425,19.9997852 C18.682864,22.5272826 15.4592846,24 12,24 C5.37271525,24 0,18.6272847 0,12 Z M9,12 C9,13.6567153 10.3432847,15 12,15 C13.6567153,15 15,13.6567153 15,12 C15,10.3432847 13.6567153,9 12,9 C10.3432847,9 9,10.3432847 9,12 Z M7,12 C7,9.23871525 9.23871525,7 12,7 C14.7612847,7 17,9.23871525 17,12 C17,14.7612847 14.7612847,17 12,17 C9.23871525,17 7,14.7612847 7,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-386.000000, -1596.000000)">
+            <g id="Icon/Products/Assets/release" transform="translate(374.000000, 1584.000000)">
+                <g id="Icon" transform="translate(12.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="-Color/Brand/Secondary" mask="url(#mask-2)" fill="#2B2B2B">
+                        <g transform="translate(-12.000000, -12.000000)" id="Swatch">
+                            <rect x="0" y="0" width="48" height="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

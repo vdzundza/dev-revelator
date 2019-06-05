@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Messaging/saved 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="22.0580583 9.55805826 22.9419417 10.4419417 12.7116157 20.6722678 7.68799196 15.758971 8.56200804 14.8653291 12.7018567 18.9142599"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data_Upload-Manager_Upload-Copy-4" transform="translate(-1019.000000, -736.000000)">
+            <g id="Icon/Messaging/saved" transform="translate(1012.000000, 727.000000)">
+                <g id="Icon">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#4612EA" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Color/Messaging/Success-Green" mask="url(#mask-2)" fill="#23DB8B">
+                        <rect id="Swatch" x="0" y="0" width="30" height="30"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

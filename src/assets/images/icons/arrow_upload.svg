@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="28px" viewBox="0 0 25 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.739224,20.826508 L15.739224,13.771821 L19.67403,13.771821 L19.67403,20.826508 L22.217672,18.282866 L25,21.065194 L19.097791,26.967403 L16.315463,26.967403 L10.413254,21.065194 L13.195582,18.282866 L15.739224,20.826508 Z M3.934806,23.608836 L7.869612,23.608836 L7.869612,27.543642 L1.967403,27.543642 L0,25.576239 L0,1.967403 L1.967403,0 L17.706627,0 L19.67403,1.967403 L19.67403,9.837015 L15.739224,9.837015 L15.739224,3.934806 L3.934806,3.934806 L3.934806,23.608836 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data_Upload-Manager_Empty" transform="translate(-708.000000, -312.000000)">
+            <g id="Group-3" transform="translate(558.000000, 282.000000)">
+                <g id="Group-2">
+                    <g id="Group" transform="translate(118.000000, 0.000000)">
+                        <g id="Icon/General/upload" transform="translate(32.000000, 30.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#4611EA" fill-rule="nonzero" transform="translate(12.500000, 13.771821) scale(-1, -1) translate(-12.500000, -13.771821) " xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

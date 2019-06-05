@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>person</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.0774245275 10.985479 0.0774245275 15.8562054 11.4718252 0 11.4718252"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="person" transform="translate(1.000000, 1.000000)">
+            <g id="Group-3" transform="translate(7.000000, 4.090256)" fill="#000000" fill-rule="nonzero">
+                <path d="M3.76953846,7.50528985 C1.95312821,7.50528985 0.5,6.01305053 0.5,4.18385395 C0.5,2.35465737 1.95312821,0.862418051 3.76953846,0.862418051 C5.58594872,0.862418051 7.03907692,2.35465737 7.03907692,4.18385395 C7.03907692,6.01305053 5.58594872,7.50528985 3.76953846,7.50528985" id="Fill-1"></path>
+            </g>
+            <g id="Group-6" transform="translate(5.000000, 12.491282)">
+                <g id="Fill-4-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <path d="M4.4172518,7.99966003 L0.5,5.57017178 C0.5,2.53740167 2.9756044,0.0774245275 5.99274725,0.0774245275 C9.00989011,0.0774245275 11.8143012,2.55302892 11.8143012,5.57017178 L8.40699789,7.99966003 L4.4172518,7.99966003 Z" id="Fill-4" fill="#000000" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+            <circle id="Oval-5" stroke="#4A4A4A" stroke-width="1.5" cx="11" cy="11.5128205" r="11"></circle>
+        </g>
+    </g>
+</svg>

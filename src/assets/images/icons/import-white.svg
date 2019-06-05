@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>🔳Icon  </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.869612,10.413254 L7.869612,6.8859105 L9.837015,6.8859105 L9.837015,10.413254 L11.108836,9.141433 L12.5,10.532597 L9.5488955,13.4837015 L8.1577315,13.4837015 L5.206627,10.532597 L6.597791,9.141433 L7.869612,10.413254 Z M1.967403,11.804418 L3.934806,11.804418 L3.934806,13.771821 L0.9837015,13.771821 L0,12.7881195 L0,0.9837015 L0.9837015,0 L8.8533135,0 L9.837015,0.9837015 L9.837015,4.9185075 L7.869612,4.9185075 L7.869612,1.967403 L1.967403,1.967403 L1.967403,11.804418 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets_Catalog_Cancel-Upload" transform="translate(-751.000000, -477.000000)">
+            <g id="Group-17" transform="translate(458.000000, 282.000000)">
+                <g id="Group-5" transform="translate(117.000000, 182.000000)">
+                    <g id="Button/Small-w-Arrow">
+                        <g id="🔳Icon--" transform="translate(176.000000, 13.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Color/Grayscale/White" mask="url(#mask-2)" fill="white">
+                                <g transform="translate(-6.000000, -5.000000)" id="Swatch">
+                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

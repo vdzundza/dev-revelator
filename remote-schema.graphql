@@ -1,0 +1,1038 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: RootQuery
+}
+
+type AclType {
+    organization_id: String
+    teams: [TeamAclType]
+}
+
+type ActivitiesType {
+    page_info: PageInfoType
+    results: [ActivityType]
+}
+
+type ActivityType {
+    created: String
+    event_name: String
+    event_priority: Int
+    event_type: String
+    fetcher_connection_id: String
+    file_name: String
+    origin: String
+    payload: String
+    report_type: String
+    source: String
+    store_front: StoreFrontType
+    storefront_id: String
+}
+
+type AlbumType {
+    amount: Float
+    income_types: [AssetSummaryIncomeType]
+    name: String
+    percentage: Float
+    qty: Int
+    qty_percentage: Float
+}
+
+type AlbumsType {
+    page_info: PageInfoType
+    results: [AlbumType]
+}
+
+type AmountConvertedType {
+    conversion: CommonCurrencyType
+    source: CommonCurrencyType
+}
+
+type AmountType {
+    amount: Float
+    country_code: String
+    country_name: String
+    date: String
+    income_type: Float
+    income_types: [AssetSummaryIncomeType]
+    name: String
+    percentage: Float
+    qty: Int
+    qty_percentage: Float
+    title: String
+}
+
+type AnalyticsReportFiltersType {
+    artists: [String]
+    asset_type: String
+    assets: [String]
+    countries: [String]
+    income_type: [String]
+    labels: [String]
+    storefronts: [String]
+}
+
+type AnalyticsReportResultSetLineType {
+    analytics_report_result_set_id: String
+    pk: String
+    title: String
+    totals: [Float]
+    totals_converted: [AmountConvertedType]
+}
+
+type AnalyticsReportResultSetLinesType {
+    page_info: PageInfoType
+    results: [AnalyticsReportResultSetLineType]
+}
+
+type AnalyticsReportResultSetType {
+    analytics_report: String
+    created: String
+    created_by: String
+    currency: String
+    end_date: String
+    file_key: String
+    headers: [String]
+    modified: String
+    modified_by: String
+    pk: String
+    start_date: String
+    timespent: Int
+    total_number_lines: Int
+    totals: [Float]
+    totals_converted: [AmountConvertedType]
+}
+
+type AnalyticsReportType {
+    acl: [AclType]
+    column_amount_currency: String
+    column_period: Int
+    created: String
+    created_by: String
+    document_type: String
+    end_period: String
+    filters: AnalyticsReportFiltersType
+    group_by: Int
+    is_column_amount: Boolean
+    is_column_qty: Boolean
+    modified: String
+    modified_by: String
+    name: String
+    pk: String
+    report_columns: Int
+    report_type: Int
+    result_set: [AnalyticsReportResultSetType]
+    start_period: String
+    status: Int
+}
+
+type AnalyticsReportsType {
+    page_info: PageInfoType
+    results: [AnalyticsReportType]
+}
+
+type ArtistSummaryType {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    artist: String
+    currency: String
+    income_types: [AssetSummaryIncomeType]
+    percentage: Float
+    qty: Int
+    qty_percentage: Float
+}
+
+type ArtistType {
+    acl: [AclType]
+    active_decade: String
+    biography: String
+    company: CompanyType
+    company_id: String
+    contacts: [ContactType]
+    contemporaries_list: [String]
+    created: String
+    genre_list: [String]
+    id: String
+    influencers_list: [String]
+    ipi: [String]
+    is_deleted: Boolean
+    is_signed: Boolean
+    isni: [String]
+    item: CommonItemType
+    location: String
+    modified: String
+    name: String
+    organization_id: String
+    pk: String
+    recording_counter: Int
+    release_counter: Int
+    websites_list: [String]
+}
+
+type ArtistsSummaryType {
+    page_info: PageInfoType
+    results: [ArtistSummaryType]
+}
+
+type ArtistsType {
+    page_info: PageInfoType
+    results: [ArtistType]
+}
+
+type AssetArtistType {
+    artist_id: String
+    artist_name: String
+    artist_role: String
+    is_primary: Boolean
+}
+
+type AssetItemType {
+    url: String
+}
+
+type AssetSummaryIncomeType {
+    income_type: String
+    qty: Int
+}
+
+type AssetSummaryType {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    asset_id: String
+    asset_title: String
+    asset_type: String
+    currency: String
+    income_types: [AssetSummaryIncomeType]
+    qty: Int
+    qty_percentage: Float
+}
+
+type AssetType {
+    album_name: String
+    artist_list: [AssetArtistType]
+    asset_type: String
+    bpm: Int
+    c_copyright: String
+    client_asset_id: String
+    company: CompanyType
+    configuration: String
+    created_by: String
+    created_date: String
+    creator_contact: ContactType
+    credits_contact: ContactType
+    distribution_date: String
+    duration: Int
+    genre_1: String
+    genre_2: String
+    is_deleted: Boolean
+    is_independent: Boolean
+    isrcs: [String]
+    item: AssetItemType
+    label_contact: ContactType
+    label_id: String
+    language: String
+    legacy_asset_id: String
+    liner_notes: String
+    lyrics: String
+    matching: [MatchType]
+    modified_by: String
+    organization_id: String
+    originality: String
+    p_copyright: String
+    percent_match: Int
+    pk: String
+    related_artists: [ArtistType]
+    related_assets: [RelatedAssetType]
+    status: String
+    tags: [String]
+    title: String
+    title_version: String
+    tracks: [TrackType]
+    upc: String
+}
+
+type AssetsSummaryType {
+    page_info: PageInfoType
+    results: [AssetSummaryType]
+}
+
+type AssetsType {
+    page_info: PageInfoType
+    results: [AssetType]
+}
+
+type CommentType {
+    created: String
+    created_by: String
+    id: String
+    modified: String
+    pk: String
+    text: String
+    topic_id: String
+}
+
+type CommentsType {
+    page_info: PageInfoType
+    results: [CommentType]
+}
+
+type CommonCurrencyType {
+    amount: String
+    code: String
+    factor: String
+    last_updated: String
+    name: String
+    prefix: String
+    suffix: String
+    value: String
+}
+
+type CommonItemType {
+    url: String
+}
+
+type CompaniesType {
+    page_info: PageInfoType
+    results: [CompanyType]
+}
+
+type CompanyItemType {
+    url: String
+}
+
+type CompanyType {
+    count_artists: Int
+    count_recordings: Int
+    count_releases: Int
+    country: String
+    created: String
+    id: String
+    is_deleted: Boolean
+    is_label: Boolean
+    logo: CompanyItemType
+    modified: String
+    name: String
+    organization_id: String
+    pk: String
+    related_artists: [String]
+    website: String
+}
+
+type ContactType {
+    company: String
+    created: String
+    created_by: String
+    email: String
+    first_name: String
+    ipi: String
+    is_invited: Boolean
+    isni: String
+    item: String
+    last_name: String
+    modified: String
+    modified_by: String
+    organization_id: String
+    phone_number: String
+    pk: String
+}
+
+type CountriesSummaryType {
+    page_info: PageInfoType
+    results: [CountrySummaryType]
+}
+
+type CountriesType {
+    page_info: PageInfoType
+    results: [CountryType]
+}
+
+type CountrySummaryType {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    country: String
+    country_code: String
+    country_name: String
+    income_types: [AssetSummaryIncomeType]
+    qty: Int
+    qty_percentage: Float
+}
+
+type CountryType {
+    "Default currency"
+    currency: String
+    "Default currency"
+    iso3: String
+    "Full name"
+    name: String
+    "Short name"
+    printable_name: String
+    "Iso2"
+    value: String
+}
+
+type CoutryCurrencyTotalsType {
+    country: String
+    currency_totals: [CurrencyTotalsType]
+}
+
+type CpmMetricTypePage {
+    items: [TopRevenuePerMonthType]
+}
+
+type CurrencyTotalsType {
+    currency: String
+    totals: Float
+}
+
+type DocumentFormatType {
+    created: String
+    modified: String
+    name: String
+    pk: String
+    source: SourceType
+    status: Int
+    store_front: StoreFrontType
+}
+
+type DocumentFormatssType {
+    page_info: PageInfoType
+    results: [DocumentFormatType]
+}
+
+type GeneralSalesSummary {
+    amount: Float
+    amount_percentage: Float
+    consumption_type: String
+}
+
+type GenreType {
+    id: String
+    name: String
+    pk: String
+    value: String
+}
+
+type GenresType {
+    page_info: PageInfoType
+    results: [GenreType]
+}
+
+type IdFieldsType {
+    key: String
+    value: String
+}
+
+type IncomeTypeType {
+    alias: String
+    descendants: [String]
+    parent: String
+    pk: String
+}
+
+type IncomeTypesType {
+    income_types: [IncomeTypeType]
+}
+
+type IncomesType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type InconmesByAssetType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type InconmesByConsumtion {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type ItemSourceType {
+    url: String
+}
+
+type ItemValueType {
+    amount_converted: AmountConvertedType
+    country: String
+    income_type: String
+    value: Float
+    yyyymm: Int
+}
+
+type LabelsType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type MatchType {
+    id_fields: [IdFieldsType]
+    store_front_id: String
+    store_front_name: String
+}
+
+type MetricType {
+    amount: AmountConvertedType
+    category_type: String
+    count: Int
+    metric_type: String
+    updated: String
+    value: MetricValueType
+}
+
+type MetricValueType {
+    value: Float
+}
+
+type MetricsType {
+    amount_all: MetricType
+    amount_last_month: MetricType
+    assets_all: MetricType
+    assets_this_month: MetricType
+    count_all: MetricType
+    count_last_month: MetricType
+    lines_all: MetricType
+    lines_last_month: MetricType
+    unmatched_assets: MetricType
+}
+
+type PageInfoType {
+    has_next: Boolean
+    next: String
+    page: Int
+    total: Int
+}
+
+type PermissionType {
+    codename: String
+    name: String
+    object: String
+}
+
+type RelatedAssetType {
+    asset_uri: String
+    relationship: String
+}
+
+type ReportConnectionType {
+    connection_type_id: String
+    created_by: String
+    credentials: String
+    id: String
+    modified_by: String
+    name: String
+    organization_id: String
+    source_id: String
+}
+
+type ReportSourceType {
+    connections: [ReportConnectionType]
+    id: String
+    is_active: Boolean
+    last_sync: String
+    name: String
+}
+
+type ReportSourceTypes {
+    page_info: PageInfoType
+    results: [ReportSourceType]
+}
+
+type ReportType {
+    created_by: String
+    description: String
+    destination_connection_id: String
+    id: String
+    is_active: Boolean
+    last_sync: String
+    modified_by: String
+    name: String
+    organization_id: String
+    report_params: String
+    report_type: String
+    report_type_id: String
+    source_connection_id: String
+    store_front_id: String
+}
+
+type ReportTypeType {
+    class_name: String
+    connection_type_id: String
+    description: String
+    documentformat_id: String
+    id: String
+    name: String
+    params_template: String
+    source_id: String
+    type_name: String
+}
+
+type ReportTypeTypes {
+    page_info: PageInfoType
+    results: [ReportTypeType]
+}
+
+type ReportTypes {
+    page_info: PageInfoType
+    results: [ReportType]
+}
+
+type RevenueReportItemsPageType {
+    page_info: PageInfoType
+    results: [RevenueReportItemsType]
+    total_sum: AmountConvertedType
+}
+
+type RevenueReportItemsType {
+    display_name: String
+    end_date: String
+    match_rate: Int
+    name: String
+    pk: String
+    source_id: String
+    start_date: String
+    total_amount: AmountConvertedType
+}
+
+type RevenueReportSourcesPageType {
+    page_info: PageInfoType
+    results: [RevenueReportSourcesType]
+    total_sum: AmountConvertedType
+}
+
+type RevenueReportSourcesType {
+    end_date: String
+    match_rate: Int
+    name: String
+    source_id: String
+    start_date: String
+    total_amount: AmountConvertedType
+    total_count: Int
+}
+
+type RevenueReportType {
+    acl: [AclType]
+    activity_period: String
+    amount: String
+    amount_converted: AmountConvertedType
+    country: String
+    country_list: [String]
+    created: String
+    created_by: String
+    currency: String
+    currency_rate: Float
+    display_name: String
+    end_date: String
+    is_approved: Boolean
+    lines_count: Int
+    match_rate: Int
+    modified: String
+    pk: String
+    source: SourceType
+    start_date: String
+    status: String
+    store_front: StoreFrontType
+    summary: Summary
+    summary_country_currency: [CoutryCurrencyTotalsType]
+}
+
+type RevenueReportsType {
+    page_info: PageInfoType
+    results: [SalesReportsType]
+    total_sum: AmountConvertedType
+}
+
+"SCM query, including Sources and Store-Fronts. Auth required"
+type RootQuery {
+    "Get activity page info"
+    ActivityLog(connection_id: String, cursor: String, event_type: String, limit: Int, order: String, origin: String, page: Int, report_type: String, report_type_id: String, sources: [String], storefronts: [String]): ActivitiesType
+    "Get List of the income analytics dashboard"
+    AnalyticsDashboardIncome(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String): IncomesType
+    "Get List of the incomes by asset analytics dashboard"
+    AnalyticsDashboardInconmesByAsset(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): InconmesByAssetType
+    "Get List of the top countries analytics dashboard"
+    AnalyticsDashboardInconmesByConsumtion(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): InconmesByConsumtion
+    "Get List of the albums analytics dashboard"
+    AnalyticsDashboardTopAlbums(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): AlbumsType
+    "Get List of the artists analytics dashboard"
+    AnalyticsDashboardTopArtists(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): TopArtistsType
+    "Get List of the top countries analytics dashboard"
+    AnalyticsDashboardTopCountries(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): TopCountriesType
+    "Get List of the labels analytics dashboard"
+    AnalyticsDashboardTopLabels(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): LabelsType
+    "Get List of the stores analytics dashboard"
+    AnalyticsDashboardTopStores(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): StoresType
+    "Get List of the tracks analytics dashboard"
+    AnalyticsDashboardTopTracks(artists: [String], asset_type: String, assets: [String], countries: [String], end_date: String, income_type: [String], labels: [String], start_date: String, storefronts: [String], token: String, with_consumption: Boolean): TracksType
+    "Get single Analytics Report by id"
+    AnalyticsReport(pk: String): AnalyticsReportType
+    "Get single Analytics Report ResultSet by id"
+    AnalyticsReportResultSet(pk: String, token: String): AnalyticsReportResultSetType
+    "Get List of the AR Result Set Lines"
+    AnalyticsReportResultSetLines(
+        cursor: String,
+        limit: Int,
+        #AR Result Set Id(Pk)
+        pk: String,
+        token: String
+    ): AnalyticsReportResultSetLinesType
+    "Get List of the analytics reports"
+    AnalyticsReports(amount_max: Int, amount_min: Int, country: String, cursor: String, end_date: String, group_by: String, is_approved: Boolean, limit: Int, order: String, page: Int, service: String, source: String, start_date: String): AnalyticsReportsType
+    "Get single asset"
+    Artist(pk: String): ArtistType
+    "List of assets"
+    Artists(cursor: String, label_id: String, limit: Int, name: String, order: String, order_field: String, order_type: String, page: Int): ArtistsType
+    "Artist summaries"
+    ArtistsSummary(cursor: String, limit: Int, order: String, page: Int, sales_report_id: String): ArtistsSummaryType
+    "Get single asset"
+    Asset(pk: String): AssetType
+    "List of assets"
+    Assets(artists: String, asset_type: String, configuration: String, cursor: String, genre: String, isrcs: String, label: String, limit: Int, order: String, page: Int, tags: String, title: String, upc: String): AssetsType
+    "List of suggested Assets"
+    AssetsSuggest(cursor: String, limit: Int, sr_line_id: String, token: String): AssetsType
+    "Asset summaries"
+    AssetsSummary(cursor: String, limit: Int, order: String, page: Int, sales_report_id: String): AssetsSummaryType
+    "Get Single comment by its id"
+    Comment(pk: String): CommentType
+    "List of comments"
+    Comments(cursor: String, limit: Int, topic_id: String): CommentsType
+    "List of companies"
+    Companies(cursor: String, limit: Int, name: String, order: String, order_field: String, order_type: String, page: Int): CompaniesType
+    "Get single company"
+    Company(pk: String): CompanyType
+    "List of Countries"
+    Countries(
+        #2 letter code
+        code2: String,
+        #3 letter code
+        code3: String,
+        cursor: String,
+        limit: Int!,
+        #Name of the country
+        name: String
+    ): CountriesType
+    "Country summaries"
+    CountriesSummary(cursor: String, limit: Int, order: String, page: Int, sales_report_id: String): CountriesSummaryType
+    "Get single Country"
+    Country(
+        #2 letter code
+        code2: String,
+        #3 letter code
+        code3: String,
+        #Name of the country
+        name: String
+    ): CountryType
+    "The most revenue of last months"
+    CpmBestCountry(end_year_month: Int, start_year_month: Int): TopRevenuePerMonthType
+    "The Cpm Per Country Income Multiple Fields"
+    CpmPerCountryIncome(sr_id: String): CpmMetricTypePage
+    "The most revenue of last months"
+    CpmTopRevenue(end_year_month: Int, start_year_month: Int): TopRevenuePerMonthType
+    "List of companies"
+    DocumentFormats(cursor: String, limit: Int, name: String): DocumentFormatssType
+    "Get single genre"
+    Genre(name: String): GenreType
+    "List of genres"
+    Genres(cursor: String, limit: Int, name: String, order_field: String, order_type: String): GenresType
+    "List of income types"
+    IncomeTypes(income_types: String): IncomeTypesType
+    "Get List of sales report metrics"
+    Metrics(token: String): MetricsType
+    "List of Connection types for the Source"
+    ReportConnectionTypes(source_id: String): SourceConnectionTypes
+    "List of Sources"
+    ReportSources(name: String, source_id: String): ReportSourceTypes
+    "List of Report types for the Source"
+    ReportTypes(source_id: String): ReportTypeTypes
+    "List of Report for the Source"
+    Reports(organization_id: String, source_id: String): ReportTypes
+    "Get single Revenue Report by id"
+    RevenueReport(pk: String): RevenueReportType
+    "Get List of revenue reports"
+    RevenueReportItems(country: String, cursor: String, end_date: String, is_approved: Boolean, limit: Int, order: String, page: Int, service: String, source: String, start_date: String): RevenueReportItemsPageType
+    "Get List of revenue reports"
+    RevenueReportSources(country: String, cursor: String, end_date: String, is_approved: Boolean, limit: Int, order: String, page: Int, service: String, source: String, start_date: String): RevenueReportSourcesPageType
+    "Get List of revenue reports"
+    RevenueReports(amount_max: Int, amount_min: Int, country: String, cursor: String, end_date: String, group_by: String, is_approved: Boolean, limit: Int, service: String, source: String, start_date: String): RevenueReportsType
+    "Get single sr line"
+    SalesReportLine(id: String): SrLineType
+    "List of Sr lines"
+    SalesReportLines(artist: String, cursor: String, end_date: String, grouping: String, limit: Int, order: String, page: Int, sales_report_id: String, source: String, start_date: String, store_front: String, title: String): SrLinesType
+    "Get single Source"
+    Source(pk: String): SourceType
+    "List of Sources"
+    Sources(cursor: String, limit: Int!, name: String): SourcesType
+    "Get single Store Front"
+    StoreFront(pk: String): StoreFrontType
+    "List of Store Fronts"
+    StoreFronts(cursor: String, is_global: Boolean, limit: Int, name: String, source_id: String): StoreFrontsType
+    "Get Single tag by its id"
+    Tag(pk: String): TagType
+    "List of tags"
+    Tags(cursor: String, limit: Int, name: String, order_field: String, order_type: String, topic_id: String): TagsType
+    "Get single Team"
+    Team(id: String): TeamType
+    "List of TeamMembers"
+    TeamMembers(cursor: String, full_name: String, limit: Int, order_field: String, order_type: String, organization_id: String, team_id: String): TeamMembersType
+    "Get multiple Teams"
+    Teams(cursor: String, limit: Int, organization_id: String): TeamsType
+    Upc(cursor: String, limit: Int, order_field: String, order_type: String, upc: String): AssetsType
+    "Get single uploaded file by id"
+    UploadedFile(id: String): UploadedFileType
+    "List of uploaded files"
+    UploadedFiles(cursor: String, end_date: String, limit: Int, order: String, page: Int, start_date: String, status: String): UploadedFileTypes
+}
+
+type SalesReportIdFieldsType {
+    isrc: String
+    store_id: String
+    upc: String
+}
+
+type SalesReportsType {
+    group_sum: AmountConvertedType
+    reports: [RevenueReportType]
+    source: String
+}
+
+type SourceConnectionType {
+    id: String
+    name: String
+    params_template: String
+    source_id: String
+    title: String
+}
+
+type SourceConnectionTypes {
+    page_info: PageInfoType
+    results: [SourceConnectionType]
+}
+
+type SourceType {
+    created: String
+    created_by: String
+    id: String
+    is_deleted: String
+    item: ItemSourceType
+    modified: String
+    modified_by: String
+    name: String
+    pk: String
+}
+
+type SourcesType {
+    page_info: PageInfoType
+    results: [SourceType]
+}
+
+type SrLineType {
+    album_name: String
+    artist: String
+    document_id: String
+    end_date: String
+    id: String
+    id_fields: SalesReportIdFieldsType
+    id_fields_hash: String
+    is_matched: Boolean
+    isrc: String
+    pk: String
+    source: SourceType
+    start_date: String
+    store_front: StoreFrontType
+    title: String
+    topic_id: String
+    upc: String
+}
+
+type SrLinesType {
+    page_info: PageInfoType
+    results: [SrLineType]
+}
+
+type StoreFrontItemType {
+    url: String
+}
+
+type StoreFrontType {
+    countries: String
+    created: String
+    created_by: String
+    id: String
+    is_deleted: Boolean
+    is_global: Boolean
+    item: StoreFrontItemType
+    modified: String
+    modified_by: String
+    name: String
+    pk: String
+    source: SourceType
+    source_id: String
+}
+
+type StoreFrontsType {
+    page_info: PageInfoType
+    results: [StoreFrontType]
+}
+
+type StoresType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type Summary {
+    artists_stats: [SummaryArtistStats]
+    assets_stats: [SummaryAssetStats]
+    country_stats: [SummaryCountryStats]
+    general: SummaryGeneral
+    stats_updated_timestamp: String
+}
+
+type SummaryArtistStats {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    artist: String
+}
+
+type SummaryAssetStats {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    asset_id: String
+    asset_item: String
+    asset_title: String
+    asset_type: String
+}
+
+type SummaryCountryStats {
+    amount: Float
+    amount_converted: AmountConvertedType
+    amount_percentage: Float
+    country: String
+}
+
+type SummaryGeneral {
+    sales_summary: [GeneralSalesSummary]
+    total_albums: Float
+    total_amount: Float
+    total_artist: Float
+    total_assets: Float
+    total_tracks: Float
+}
+
+type TagType {
+    created: String
+    created_by: String
+    id: String
+    modified: String
+    name: String
+    pk: String
+    topic_id: String
+}
+
+type TagsType {
+    page_info: PageInfoType
+    results: [TagType]
+}
+
+type TeamAclType {
+    name: String
+    permissions: [PermissionType]
+}
+
+type TeamMemberItemType {
+    url: String
+}
+
+type TeamMemberTeamType {
+    id: String
+    name: String
+}
+
+type TeamMemberType {
+    count: Int
+    email: String
+    id: String
+    item: TeamMemberItemType
+    name: String
+    signin: String
+    status: Boolean
+    surename: String
+    teams: [TeamMemberTeamType]
+}
+
+type TeamMembersType {
+    page_info: PageInfoType
+    results: [TeamMemberType]
+}
+
+type TeamType {
+    id: String
+    name: String
+}
+
+type TeamsType {
+    page_info: PageInfoType
+    results: [TeamType]
+}
+
+type TopArtistsType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type TopCountriesType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type TopRevenuePerMonthType {
+    country: String
+    income_type: String
+    items: [ItemValueType]
+    max_value: Float
+}
+
+type TrackType {
+    asset: AssetType
+    track_sort: Int
+}
+
+type TracksType {
+    page_info: PageInfoType
+    results: [AmountType]
+}
+
+type UploadedFileType {
+    acl: [AclType]
+    created: String
+    created_by: String
+    display_name: String
+    document_format: String
+    document_format_id: String
+    document_format_name: String
+    document_retrieval_id: String
+    etag: String
+    event_name: String
+    event_type: String
+    file_key: String
+    file_name: String
+    id: String
+    item: CommonItemType
+    modified: String
+    modified_by: String
+    organization_id: String
+    pk: String
+    processing_status: String
+    salesreport_id: String
+    status: String
+    type: String
+}
+
+type UploadedFileTypes {
+    page_info: PageInfoType
+    results: [UploadedFileType]
+}

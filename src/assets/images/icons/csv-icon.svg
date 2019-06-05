@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>List / icon / Spotify</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.3333333,1.66666667 L15,1.66666667 L15,7.5 L13.3333333,7.5 L13.3333333,1.66666667 Z M1.66666667,18.3333333 L13.3333333,18.3333333 L13.3333333,1.66666667 L3.6785113,1.66666667 L1.66666667,3.6785113 L1.66666667,18.3333333 Z M0,2.98815536 L2.98815536,0 L15,0 L15,20 L0,20 L0,2.98815536 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data_Upload-Manager_Uploading" transform="translate(-115.000000, -412.000000)">
+            <g id="Group-8" transform="translate(36.000000, 265.000000)">
+                <g id="Group-4" transform="translate(0.000000, 122.000000)">
+                    <g id="List-/-List-item-Copy">
+                        <g id="List-/-icon-/-Spotify" transform="translate(79.000000, 25.000000)">
+                            <g id="Icon" transform="translate(0.500000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="Color/Grayscale/10" mask="url(#mask-2)" fill="#2B2B2B">
+                                    <g transform="translate(-12.500000, -10.000000)" id="Swatch">
+                                        <rect x="0" y="0" width="40" height="40"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <text id="CSV" font-family="Helvetica" font-size="4" font-weight="normal" letter-spacing="0.200000003" fill="#2B2B2B">
+                                <tspan x="3.5" y="12">CS</tspan>
+                                <tspan x="9.45664063" y="12">V</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
