@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Icon/Store/7Digital</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.85961317,21.6774194 L0,10.8400203 L4.86092684,0 L14.4516129,0 C14.4516129,0.195975503 14.4110206,0.382545415 14.3369548,0.551229287 L4.86224072,21.6774194 L4.85961317,21.6774194 Z" id="path-1"></path>
+        <linearGradient x1="5.55900723%" y1="54.4082328%" x2="15.2822267%" y2="47.7776046%" id="linearGradient-3">
+            <stop stop-color="#5FA9A3" offset="0%"></stop>
+            <stop stop-color="#455C9A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icon/Store/7Digital" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(14.000000, 8.000000)">
+            <path d="M0,10.3225806 L0,0 L13.9423046,0 C14.4849839,0 14.9527525,0.305401794 15.1673323,0.746031979 L19.4976916,9.80002056 C19.5718331,9.95976919 19.6129032,10.1366967 19.6129032,10.3225806 L0,10.3225806" id="Fill-1" fill="#17448A"></path>
+            <g id="Group-13" transform="translate(5.161290, 10.322581)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-12"></g>
+                <polygon id="Fill-11" fill="url(#linearGradient-3)" mask="url(#mask-2)" points="-5.16129032 21.6774194 96 21.6774194 96 -10.3225806 -5.16129032 -10.3225806"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

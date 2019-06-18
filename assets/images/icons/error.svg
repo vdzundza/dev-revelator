@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_error_s_24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Upload-modal---States" transform="translate(-478.000000, -686.000000)" fill="#D0021B">
+            <g id="Progess-modal" transform="translate(184.000000, 491.000000)">
+                <g id="Icon-Error-S" transform="translate(285.000000, 186.000000)">
+                    <path d="M18,10.7027027 C13.9864865,10.7027027 10.7027027,13.9864865 10.7027027,18 C10.7027027,22.0135135 13.9864865,25.2972973 18,25.2972973 C22.0135135,25.2972973 25.2972973,22.0135135 25.2972973,18 C25.2972973,13.9864865 22.0135135,10.7027027 18,10.7027027 L18,10.7027027 Z M18.7297297,21.6486486 L17.2702703,21.6486486 L17.2702703,20.1891892 L18.7297297,20.1891892 L18.7297297,21.6486486 L18.7297297,21.6486486 Z M18.7297297,18.7297297 L17.2702703,18.7297297 L17.2702703,14.3513514 L18.7297297,14.3513514 L18.7297297,18.7297297 L18.7297297,18.7297297 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

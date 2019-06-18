@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="171px" height="171px" viewBox="0 0 171 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="58.5" cy="66.5" r="58.5"></circle>
+        <filter x="-35.0%" y="-35.0%" width="170.1%" height="170.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.270588235   0 0 0 0 0.270588235   0 0 0 0 0.270588235  0 0 0 0.539147418 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#252528" offset="0%"></stop>
+            <stop stop-color="#9C9C9C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="58.2857143" cy="66.7142857" r="58.2857143"></circle>
+        <linearGradient x1="42.7864818%" y1="44.1187285%" x2="1.41003667%" y2="97.1799267%" id="linearGradient-7">
+            <stop stop-color="#341DBC" offset="0%"></stop>
+            <stop stop-color="#8E83D2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="14-empty" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-751.000000, -348.000000)">
+        <g id="Group-2" transform="translate(661.000000, 367.000000)">
+            <g id="Group" transform="translate(117.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <circle stroke-opacity="0.147475091" stroke="#A2A2A2" stroke-width="2" cx="58.5" cy="66.5" r="59.5"></circle>
+                </g>
+                <polygon id="Rectangle-3" fill="#FFFFFF" mask="url(#mask-2)" points="10.2857143 5.68571429 86.9882812 5.68571429 97.9327567 15.7393973 107.657143 24.4835938 107.657143 87.9714286 10.2857143 87.9714286"></polygon>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                <rect id="Rectangle-3" fill="#FFFFFF" mask="url(#mask-6)" x="10.2857143" y="-8.02857143" width="97.3714286" height="136.457143"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="37.9142857" width="61.0285714" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="44.7714286" width="61.0285714" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="51.6285714" width="41.1428571" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="92.7714286" width="41.1428571" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="65.3428571" width="61.0285714" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="72.2" width="61.0285714" height="2.74285714"></rect>
+                <rect id="Rectangle-10" fill="#ECE7FD" mask="url(#mask-6)" x="27.4285714" y="79.0571429" width="54.8571429" height="2.74285714"></rect>
+                <polygon id="Path-2" fill="url(#linearGradient-7)" opacity="0.200000003" points="86.8419643 5.57993252 107.657143 24.4866071 86.8419643 24.4866071"></polygon>
+                <circle id="Oval-3" fill="#341DBC" cx="97.5" cy="15.5" r="15.5"></circle>
+                <text id="!" font-family="Lato-Bold, Lato" font-size="24" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="94" y="24">!</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

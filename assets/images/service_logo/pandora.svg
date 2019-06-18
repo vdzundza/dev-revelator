@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Icon/Store/Pandora</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Store/Pandora" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pandora" transform="translate(13.000000, 11.000000)" fill="#2196F3" fill-rule="nonzero">
+            <path d="M21.9554724,8.7945 C21.4998017,3.862625 17.2149256,0 12.1994051,0 L0,0 L0,26 L6.2851134,26 C7.15088778,26 7.85639176,25.272 7.85639176,24.375 L7.85639176,19.5 L12.5702268,19.5 C15.2209734,19.5 17.764873,18.3365 19.5467027,16.306875 C21.3568153,14.249625 22.2115908,11.581375 21.9554724,8.7945 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
